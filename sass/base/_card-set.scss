@@ -1,0 +1,11 @@
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--element-padding));
+  margin-top: calc(-1 * var(--element-padding));
+}
+
+.card-set__item {
+  margin-left: var(--element-padding);
+  margin-top: var(--element-padding);
+}

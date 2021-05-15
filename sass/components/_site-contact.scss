@@ -1,0 +1,33 @@
+.site-contact {
+  display: flex;
+}
+
+.site-contact--left {
+  margin-left: auto;
+}
+
+.site-contact__item:not(:last-child) {
+  margin-right: var(--element-padding);
+}
+
+.site-contact__link {
+  @extend %flex-alignment;
+
+  padding-top: var(--header-padding);
+  padding-bottom: var(--header-padding);
+
+  color: var(--primary-text-color);
+
+  transition: color 250ms var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.site-contact__icon {
+  margin-right: var(--feature-title-margin);
+
+  fill: currentColor;
+}

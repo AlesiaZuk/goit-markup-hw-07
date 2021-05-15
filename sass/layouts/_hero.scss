@@ -1,0 +1,19 @@
+.page-hero {
+  height: 600px;
+  max-width: 1600px;
+  padding-top: var(--hero-padding);
+  padding-bottom: var(--hero-padding);
+
+  background: var(--hero-footer-background);
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  text-align: center;
+}
+
+.page-hero--centered {
+  margin-left: auto;
+  margin-right: auto;
+}
