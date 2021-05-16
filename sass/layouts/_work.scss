@@ -2,11 +2,16 @@
   padding-bottom: var(--section-padding);
 }
 
-.work__item {
-  flex-basis: calc((100% - 90px) / 3);
+.work__list {
+  @extend %card-set;
 }
 
-.work__cart {
+.work__item {
+  flex-basis: calc((100% - 90px) / 3);
+  @extend %card-set__item;
+}
+
+.work__thumb {
   position: relative;
 }
 

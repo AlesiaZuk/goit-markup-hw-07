@@ -1,12 +1,12 @@
-.social-contact {
+.social {
   display: inline-flex;
 }
 
-.social-contact__item:not(:last-child) {
+.social__item:not(:last-child) {
   margin-right: var(--feature-title-margin);
 }
 
-.social-contact__link {
+.social__link {
   @extend %flex-centered;
 
   height: 44px;
@@ -24,10 +24,10 @@
   }
 }
 
-.social-contact__link--white {
+.social__link--white {
   @include set-colors(var(--primary-background), var(--footer-icon-color));
 }
 
-.social-contact__icon {
+.social__icon {
   fill: currentColor;
 }

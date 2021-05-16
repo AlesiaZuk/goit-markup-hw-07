@@ -1,10 +1,4 @@
-.title {
-  letter-spacing: 0.03em;
-
-  color: var(--title-text-color);
-}
-
-.page-hero__title {
+.hero__title {
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
@@ -20,7 +14,9 @@
   color: var(--primary-background);
 }
 
-.feature-list__title {
+.feature__title {
+  @extend %title;
+
   margin-bottom: var(--feature-title-margin);
 
   font-size: 14px;
@@ -28,23 +24,19 @@
   text-transform: uppercase;
 }
 
-.section-title {
-  margin-bottom: var(--title-margin);
-
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
+.work__title {
+  @extend %section-title;
 }
 
-.team-list__title {
-  margin-bottom: var(--feature-title-margin);
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+.team__title {
+  @extend %section-title;
 }
 
-.footer-title {
+.clients__title {
+  @extend %section-title;
+}
+
+.footer__title {
   margin-bottom: var(--footer-logo-margin);
   font-weight: 700;
   font-size: 14px;
@@ -56,6 +48,8 @@
 }
 
 .modal__title {
+  @extend %title;
+
   display: inline-block;
   width: 448px;
   margin-bottom: 30px;

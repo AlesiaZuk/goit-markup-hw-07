@@ -1,4 +1,15 @@
-.team-list__сard {
+.team {
+  @extend %section;
+  background: var(--second-background);
+}
+
+.team__list {
+  @extend %card-set;
+}
+
+.team__item {
+  @extend %card-set__item;
+
   flex-basis: calc((100% - 120px) / 4);
 
   border-bottom-left-radius: 4px;
@@ -8,7 +19,7 @@
   text-align: center;
 }
 
-.team-list__lower-card {
+.team__meta {
   padding-top: var(--element-padding);
   padding-bottom: var(--element-padding);
   padding-left: var(--header-padding);
@@ -17,7 +28,17 @@
   background: var(--primary-background);
 }
 
-.team-list__description {
+.team__name {
+  @extend %title;
+
+  margin-bottom: var(--feature-title-margin);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team__description {
   margin-bottom: var(--icon-margin);
 
   font-size: 16px;

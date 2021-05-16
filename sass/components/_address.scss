@@ -1,4 +1,4 @@
-.address--right {
+.address {
   margin-right: var(--footer-container-margin);
 }
 
@@ -19,6 +19,8 @@
 }
 
 .address__link {
+  @extend %link;
+
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;

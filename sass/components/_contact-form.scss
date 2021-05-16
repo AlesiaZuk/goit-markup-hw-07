@@ -112,7 +112,15 @@
   text-align: center;
 }
 .form__button {
+  @extend %button;
+
   margin-left: auto;
   margin-right: auto;
   padding: 10px 32px;
+
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  @include set-colors(var(--primary-background), var(--accent-color));
 }

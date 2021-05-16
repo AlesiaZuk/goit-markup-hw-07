@@ -1,10 +1,18 @@
-.subscription--left {
+.subscription {
   margin-left: var(--logo-margin);
 }
 
-.subscription__footer-title {
+.subscription__title {
   display: block;
   margin-bottom: var(--footer-logo-margin);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-background);
 }
 
 .subscription__input {
@@ -20,11 +28,19 @@
 }
 
 .subscription__button {
+  @extend %button;
+
   display: inline-flex;
   justify-content: center;
   align-items: center;
   padding: 10px 28px 10px 29px;
   margin-left: 12px;
+
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  @include set-colors(var(--primary-background), var(--accent-color));
 }
 
 .subscription__icon {

@@ -1,8 +1,16 @@
-.feature-list__item {
-  flex-basis: calc((100% - 120px) / 4);
+.feature {
+  @extend %section;
 }
 
-.feature-list__shell {
+.feature__list {
+  @extend %card-set;
+}
+.feature__item {
+  flex-basis: calc((100% - 120px) / 4);
+  @extend %card-set__item;
+}
+
+.feature__thumb {
   @extend %flex-centered;
   border-radius: 4px;
 
@@ -13,7 +21,7 @@
   background-color: var(--second-background);
 }
 
-.feature-list__text {
+.feature__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

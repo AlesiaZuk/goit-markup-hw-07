@@ -1,19 +1,8 @@
-.button {
-  padding: 0px;
-  border: none;
-  border-radius: 4px;
+.hero__button {
+  @extend %button;
 
-  font-family: inherit;
-  font-size: 16px;
-  text-align: center;
-  cursor: pointer;
-}
-
-.page-hero__button {
   padding: 10px 32px;
-}
 
-.main-page-button {
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -22,6 +11,8 @@
 }
 
 .filter__button {
+  @extend %button;
+
   padding: 6px 22px;
   font-weight: 500;
   line-height: 1.62;

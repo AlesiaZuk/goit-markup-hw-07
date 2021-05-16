@@ -1,8 +1,17 @@
-.clients-list__item {
+.clients {
+  @extend %section;
+}
+
+.clients__list {
+  @extend %card-set;
+}
+
+.clients__item {
+  @extend %card-set__item;
   flex-basis: calc((100% - 180px) / 6);
 }
 
-.clients-list__link {
+.clients__link {
   @extend %flex-centered;
 
   width: 170px;
@@ -22,6 +31,6 @@
   }
 }
 
-.clients-list__icon {
+.clients__icon {
   fill: currentColor;
 }

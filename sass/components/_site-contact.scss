@@ -1,8 +1,5 @@
 .site-contact {
   display: flex;
-}
-
-.site-contact--left {
   margin-left: auto;
 }
 
@@ -11,6 +8,7 @@
 }
 
 .site-contact__link {
+  @extend %link;
   @extend %flex-alignment;
 
   padding-top: var(--header-padding);
